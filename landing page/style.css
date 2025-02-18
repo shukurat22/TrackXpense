@@ -70,51 +70,51 @@ background-color: #fff;
 
 }
 
-.Hero-Container h1 {
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.get {
-
-  font-size: 16px;
-  font-weight: 300px;
-  color: #000;
-
-}
-
-.get-2 {
-  margin-top: 35px;
-
-}
-.but{
-  width: 150px;
-  padding: 5px;
-  color: #ffffff;
-  background-color: #1E3387;
-  border-radius: 30px;
-  margin-top: 5px;
+  .Hero-Container h1 {
+    font-size: 28px;
+    font-weight: bold;
+  }
   
+  .get {
+  
+    font-size: 16px;
+    font-weight: 300px;
+    color: #000;
+  
+  }
+  
+  .get-2 {
+    margin-top: 35px;
 
-}
-.copy-2 {
-  color: #000;
-}
+  }
+  .but{
+    width: 150px;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #1E3387;
+    border-radius: 30px;
+    margin-top: 5px;
+    
+  
+  }
+  .copy-2 {
+    color: #000;
+  }
 
 
-
-.hero-grid {
-  display: grid;
-  width: 80%;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 100px;
-} 
-
-.hero-image {
-  background-color: #fff;
-  width: 60%;
-  margin-left: 400px;
-  margin-top: 40px;
+  
+  .hero-grid {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
+  } 
+  
+  .hero-image {
+    background-color: #fff;
+    width: 60%;
+    margin-left: 400px;
+    margin-top: 40px;
 
 }
 
@@ -396,94 +396,94 @@ font-size: 1rem;
 }
 
 .about-text-1 {
-color: #000;
+  color: #000;
 }
 
 .about-text-2 {
-color: #000;
+  color: #000;
 }
 
 .about-text-3 {
-color: #000;
+  color: #000;
 }
 /*******Download our App Now******/
 
 
 
 .download-section {
-  font-family: Arial, sans-serif;
-  background-color: white;
-  margin: 0;
-  padding: 0; 
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0; 
 
 }
 .content-download {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 100px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 10%;
 }
 
 /* Left Content - Stack elements vertically */
 .content {
-display: flex;
-flex-direction: column;
-align-items: flex-start; /* Align to the left */
-max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align to the left */
+  max-width: 500px;
 }
 
 h2 {
-font-size: 24px;
-font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 p {
-color: #fff;
-font-size: 14px;
-line-height: 1.5;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
 }
-
+ 
 .subheading {
-color: #444; 
-font-size: 14px;
-line-height: 1.5;
-margin-top: 20px;
-margin-bottom: 20px;
+  color: #444; 
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 20px;
 } 
 .store-buttons {
-display: flex;
-gap: 10px;
-margin: 20px 0;
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
 }
 
 .store-buttons img {
-width: 150px;
-cursor: pointer;
+  width: 150px;
+  cursor: pointer;
 }
 
 /* Stats Boxes */
 .stats {
-display: flex;
-gap: 20px;
-margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .stat-box {
-background-color: #1E3A8A;
-color: white;
-text-align: center;
-padding: 10px;
-border-radius: 10px;
-width: 120px;
+  background-color: #1E3A8A;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  width: 120px;
 }
 
 /* Phone Image */
 .phones {
-flex-shrink: 0; 
-height: 400px;
+  flex-shrink: 0; 
+  height: 400px;
 }
 
 .phone {
-width: 100%;
-max-width: 500px;
+  width: 100%;
+  max-width: 500px;
 }
