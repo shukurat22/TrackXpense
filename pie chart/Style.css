@@ -80,13 +80,15 @@ body{
 }
 /****Dashboard bal***/
 
+
+
 .general-b {
   width: 50%;
   border: 1px solid lightgrey;
   margin-bottom: 56px;
  
 }
-.ba button{
+a .ba button{
   padding: 15px;
   color: white;
   background-color: #1E3387;

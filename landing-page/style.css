@@ -1,0 +1,488 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial;
+}
+
+#main-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border: 20px solid #1E3387;
+  padding: 0px;
+}
+/* logo */
+.first-logo{
+  width:100%;
+  height: 75px;
+  margin-left: 32px;
+
+/*styling the nav bar */
+}
+.links{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 160px;
+  margin-right: 24px;
+  padding: 24px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+/* styling the icon section */
+#icon-holder{
+ color:#1E3387;
+ justify-content: space-between;
+ display: flex;
+ align-items: center;
+ padding-left: 24px;
+ padding-right: 32px;
+ margin-left: 40%;
+ margin-right: 32px;
+ gap: 32px;
+}
+
+.Hero-Container {
+display: flex;
+flex-direction: column;
+line-height: 1.6;
+padding-top: 30px;
+padding-bottom: 100px;
+padding-right: 30px;
+border-left: none;
+border-right: 10px solid #788BE3;
+border-top: 10px solid #788BE3;
+border-bottom: 10px solid #788BE3;
+width: 400px;
+height: 350px;
+margin-top: 150px;
+margin-left: 150px;
+background-color: #fff;
+
+}
+
+  .Hero-Container h1 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .get {
+  
+    font-size: 16px;
+    font-weight: 300px;
+    color: #000;
+  
+  }
+  
+  .get-2 {
+    margin-top: 35px;
+
+  }
+  .but{
+    width: 150px;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #1E3387;
+    border-radius: 30px;
+    margin-top: 5px;
+    
+  
+  }
+  .copy-2 {
+    color: #000;
+  }
+
+
+  
+  .hero-grid {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
+  } 
+  
+  .hero-image {
+    background-color: #fff;
+    width: 60%;
+    margin-left: 400px;
+    margin-top: 40px;
+
+}
+
+/* Contact Section */
+.contact-info {
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0px 0.7;
+}
+
+.contact-card {
+background: white;
+box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+height: 30px;
+width: 450px;
+padding: 40px 40px;
+border-radius: 10px;
+display: flex;
+align-items: center;
+gap: 20px;
+}
+
+.contact-item {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.contact-item img {
+width: 24px;
+}
+
+.divider {
+width: 2px;
+height: 30px;
+background-color: #ccc;
+}
+
+/* Footer */
+footer {
+background-color: #1E3387;
+color: white;
+padding: 50px 20px;
+}
+
+.footer-container {
+display: flex;
+justify-content: space-between;
+max-width: 1200px;
+margin: auto;
+}
+
+.footer-left {
+max-width: 300px;
+}
+
+.logo {
+font-size: 24px;
+font-weight: bold;
+}
+
+.highlight {
+color: lightgray;
+}
+
+.social-icons {
+display: flex;
+gap: 10px;
+margin-top: 10px;
+}
+
+.social-icons img {
+width: 20px;
+}
+
+.footer-links h3,
+.newsletter h3 {
+font-size: 16px;
+margin-bottom: 10px;
+}
+
+.footer-links ul {
+list-style: none;
+padding: 0;
+}
+
+.footer-links ul li {
+margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+text-decoration: none;
+color: white;
+}
+
+.newsletter p {
+font-size: 14px;
+}
+
+.newsletter-box {
+display: flex;
+margin-top: 10px;
+border: 2px solid white; 
+border-radius: 5px;
+overflow: hidden; 
+}
+
+.newsletter-box input {
+flex: 1;
+padding: 10px;
+border: none;
+border-radius: 5px 0 0 5px;
+outline: none;
+}
+
+.newsletter-box button {
+background: #1E3387;  
+border: none;
+padding: 10px 15px;
+color: #f4f4f4; 
+font-weight: bold;
+cursor: pointer;
+border-left: 2px solid white;  
+transition: 0.3s;
+}
+
+.newsletter-box button:hover {
+background: lightgray;  
+}
+
+.footer-bottom {
+text-align: center;
+margin-top: 20px;
+font-size: 14px;
+}
+
+hr {
+width: 90%;
+margin-top: 50px;
+}
+
+
+/**************After Hero Section
+
+.about-section {
+position: relative;
+background-color: #1E3387;
+color: white; /* Ensures text is visible 
+text-align: center;
+padding: 80px 0 20px 20px; /* Adjust spacing 
+}
+
+
+.about-section .content {
+
+padding left: 80px;
+
+}
+
+
+.about-section .title {
+font-size: 2.5rem;
+font-weight: bold;
+margin-bottom: 20px;
+padding-left: 120px;
+}
+
+.about-section .description {
+font-size: 1.2rem;
+line-height: 1.6;
+margin-bottom: 30px;
+margin: ;
+padding-left: 0px;
+padding-right: 20px;
+width: 950px;
+}
+
+.about-section .cta-button {
+background: #fff; /* Customize button color 
+color: #1E3387;
+border: none;
+padding: 12px 24px;
+font-size: 1.2rem;
+cursor: pointer;
+border-radius: 5px;
+transition: 0.3s;
+}
+
+.about-section .cta-button:hover {
+background: #ADAAAA;
+}
+
+/* Responsive adjustments 
+@media (max-width: 768px) {
+.about-section .title {
+    font-size: 2rem;
+}
+
+.about-section .description {
+    font-size: 1rem;
+}
+
+.about-section .cta-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+}
+********/
+
+/*******AFTER HERO******/
+.about-app {
+text-align: center;
+background-color: #1E3387;
+color: white;
+padding: 50px 20px;
+}
+
+.about-app h2 {
+font-size: 2rem;
+font-weight: bold;
+margin-bottom: 10px;
+padding-bottom: 30px;
+}
+
+.about-content {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 100px;
+flex-wrap: wrap;
+padding-right: 2px ;
+margin-left: 100px;
+
+}
+
+.about-image img {
+width: 400px; /* Adjust based on your design */
+margin-right: 80%;
+margin-left: 0px;
+padding-right: 100px;
+}
+
+.about-list {
+list-style: none;
+padding: 0;
+max-width: 400px;
+
+}
+
+.about-list li {
+background: white;
+color: black;
+border-radius: 10px;
+padding: 15px;
+display: flex;
+align-items: center;
+margin-bottom: 15px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+margin-bottom: 30px;
+}
+
+.about-list .icon {
+font-size: 24px;
+color: #1E3387;
+margin-right: 10px;
+}
+
+.about-list h3 {
+margin: 0;
+font-size: 1.2rem;
+font-weight: bold;
+}
+
+.about-list p {
+margin: 5px 0 0;
+font-size: 1rem;
+}
+ .about-text-1 {
+  color: #000;
+ }
+
+.about-text-2 {
+  color: #000;
+}
+
+.about-text-3 {
+  color: #000;
+}
+/*******Download our App Now******/
+
+
+
+.download-section {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0; 
+
+}
+.content-download {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 10%;
+}
+
+/* Left Content - Stack elements vertically */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align to the left */
+  max-width: 500px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+}
+ 
+.subheading {
+  color: #444; 
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+} 
+.store-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.store-buttons img {
+  width: 150px;
+  cursor: pointer;
+}
+
+/* Stats Boxes */
+.stats {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.stat-box {
+  background-color: #1E3A8A;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  width: 120px;
+}
+
+/* Phone Image */
+.phones {
+  flex-shrink: 0; 
+  height: 400px;
+}
+
+.phone {
+  width: 100%;
+  max-width: 500px;
+}
