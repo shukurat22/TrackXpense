@@ -44,7 +44,7 @@ cursor: pointer;
   height: 3px;
   margin: 4px;
   border-radius: 5px;
-  background: #000;
+  background: #1E3A8A;
   transition: .4s;
 }
 
@@ -141,6 +141,14 @@ a{
  gap: 32px;
 }
 
+@media screen and (min-width: 1024px) {
+  #icon-holder{
+    color: #ffffff;
+  }
+}
+
+  
+ 
 
 
 
