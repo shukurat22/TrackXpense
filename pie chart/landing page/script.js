@@ -1,5 +1,15 @@
 // script.js
 
+// Hamburger menu
+const toggle = document.querySelector("#navToggle");
+const mobile_menu = document.querySelector('.mobile-menu');
+
+navToggle.addEventListener('click', () => {
+    toggle.classList.toggle('change')
+    mobile_menu.classList.toggle('active')
+});
+
+
 // Smooth Scroll Functionality for Navigation and Footer Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
