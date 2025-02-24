@@ -695,7 +695,8 @@ padding-left: 50px;
   align-items: flex-start;
   /* Align to the left */
   max-width: 500px;
-  padding-left: 20px;
+  padding-left: 0;
+  
 }
 
 h2 {
