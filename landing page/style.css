@@ -315,12 +315,13 @@ background-color: #fff;
 
 .hero-image {
   background-color: #fff;
-  background-image: url(../Image/hero-phone-img.png);
-  width: 45%;
-  height: 80dvh;
+  background-image: url(../hero-phone-img.png);
+  width: 30%;
+  height: 20dvh;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+ 
   /* left: 156px; */
   position: relative;
   /* commented out old style */
@@ -328,6 +329,14 @@ background-color: #fff;
     margin-left: 400px;
     margin-top: 40px; */
 
+}
+
+@media screen and (min-width: 1024px){
+  .hero-image{
+    width: 60%;
+    height: 70dvh;
+    margin-left: 130px;
+  }
 }
 
 .button-collection {
