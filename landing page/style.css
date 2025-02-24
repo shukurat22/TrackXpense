@@ -616,9 +616,9 @@ margin-left: 100px; */
 
 .about-image img {
  width: 400px; 
-margin-right: 80%;
 margin-left: 0px;
-padding-right: 100px;
+padding-right: 50px;
+padding-left: 50px;
 }
 
 .about-list {
@@ -695,6 +695,7 @@ padding-right: 100px;
   align-items: flex-start;
   /* Align to the left */
   max-width: 500px;
+  padding-left: 20px;
 }
 
 h2 {
@@ -752,6 +753,7 @@ p {
 .phone {
   width: 100%;
   max-width: 500px;
+  padding-top: 50px;
 }
 
 @media (max-width: 50rem) {
