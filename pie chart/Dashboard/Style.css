@@ -388,6 +388,8 @@ button:hover{
 }
 
 
+
+
 /*****************************  piechart **********************************************/
 .pie{
   width: 300px;
@@ -520,7 +522,7 @@ button:hover{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 98%;
   position: relative;
-  margin-left:15px ;
+  margin-left: 0;
   margin-bottom: 32px;
  flex-direction: column;
  align-items: center;
