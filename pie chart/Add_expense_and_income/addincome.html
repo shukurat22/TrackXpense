@@ -3,42 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, intial-scale =1.0" />
-    <link rel="shortcut icon" type="image/jpg" href="Logo.svg">
+    <link rel="shortcut icon" type="image/jpg" href="Image/LOGO.png">
     <title>TrackXpense</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../landing page/style.css">
     <script
       src="https://kit.fontawesome.com/47f5f23b8c.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header id="main-section">
-      <!-------logo ----------->
-      <div class="first-logo">
-        <img src="Image/LOGO.png" style="height: 75px" />
+    <header id="main-section"> 
+      <!----logo -------->
+     <div class="mobile-display">
+          <div class="nav-header">
+              <div class="logo">
+                  <img src="Image/LOGO.png" />
+              </div>
+              <div class="desktop-display">
+                  <div>
+                      <nav>
+                        <ul class="links">
+                          <li><a href="../landing page/index.html">Home</a></li>
+                          <li><a href="../Dashboard/Index.html">Dashboard</a></li>
+                          <li><a href="../landing page/index.html#download-contact">About</a></li>
+                          <li><a href="../landing page/index.html#contact-info">Contact</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+              </div>
+              <div id="navToggle">
+                  <div class="bar b-one"></div>
+                  <div class="bar b-two"></div>
+                  <div class="bar b-three"></div>
+              </div>
+          </div> 
+          <div class="mobile-menu">
+              <ul class="nav-items">
+                  <li class="nav-list"><a class="nav-link" href="../landing page/index.html">Home</a></li>
+                  <li class="nav-list"><a class="nav-link" href="../Dashboard/Index.html">Dashboard</a></li>
+                  <li class="nav-list"><a class="nav-link" href="#../landing page/index.html#download-contact"">About</a></li>
+                  <li class="nav-list"><a class="nav-link" href="../landing page/index.html#contact-info">Contact</a></li>
+                  <li class="nav-list"><a href="#" class="nav-link">
+                          <i class="fa-solid fa-user"></i>
+                      </a></li>
+                  <li class="nav-list"><a href="#" class="nav-link">
+                      <i class="fa-solid fa-right-to-bracket"></i>
+                  </a>
+                  </li>
+              </ul>
+          </div>
       </div>
-      <div>
-        <!-----navbar links------->
-        <nav>
-          <ul class="links">
-            <li><a href="../landing page/index.html">Home</a></li>
-            <li><a href="../Index.html">Dashboard</a></li>
-            <li><a href="../landing page/index.html">About</a></li>
-            <li><a href="../landing page/index.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-    <!--------------icon-------->
-    <div id="icon-holder">
-      <i class="fa-solid fa-user"></i>
-      <i class="fa-solid fa-right-to-bracket"></i>
-    </div>
-    </header>  
+  
+      
+  </header>
 
   <body>
     <div class="first-section">
-      <a href="../index.html">
+      <a href="../Dashboard/Index.html">
         <i class="fa-solid fa-arrow-left"></i> 
     </a>
       <p>ADD INCOME</p>
@@ -123,64 +145,69 @@
     </div>
 
 
-    <!-------------------------------------Footer Section------------------------------------------------------->
-
-  <!-- Contact Section -->
-  <section class="contact-info">
-    <div class="contact-card">
-        <div class="contact-item">
-            <img src="Email Icon.svg" alt="Email Icon">
-            <span>info@trackxpense.com</span>
-        </div>
-        <div class="divider"></div>
-        <div class="contact-item">
-            <img src="Call.svg" alt="Phone Icon">
-            <span>+234 321 655 9985</span>
-        </div>
-    </div>
-</section>
+    <!-------------------------------------Footer Section------------------------------------------------------>
 
 <!-- Footer Section -->
-<footer>
-    <div class="footer-container">
-        <div class="footer-left">
-            <h2 class="logo">
-                <a href="#"><img src="Logo.svg" alt="Logo"></a>
-            </h2>
-            <p>TrackXpense helps you monitor expenses, manage income, and take control of your finances—all in one place.</p>
-            <div class="social-icons">
-                <a href="#"><img src="instagram-fill.svg" alt="Instagram"></a>
-                <a href="#"><img src="twitter-fill.svg" alt="Twitter"></a>
-                <a href="#"><img src="youtube-fill.svg" alt="YouTube"></a>
+
+    <!-- Contact Section -->
+    <section class="contact-info">
+        <div class="contact-card">
+            <div class="contact-item">
+                <img src="../landing page/Landing Icons/Email Icon.svg" alt="Email Icon">
+                <span>info@trackxpense.com</span>
+            </div>
+            <div class="divider"></div>
+            <div class="contact-item">
+                <img src="../landing page/Landing Icons/Call.svg" alt="Phone Icon">
+                <span>+234 321 655 9985</span>
             </div>
         </div>
+    </section>
 
-        <div class="footer-links">
-            <h3>QUICK LINK</h3>
-            <ul>
-                <li><a href="../landing page/index.html">Home</a></li>
-                <li><a href="../Index.html">Dashboard</a></li>
-                <li><a href="../landing page/index.html">About</a></li>
-                <li><a href="../landing page/index.html">Contact</a></li>
-            </ul>
-        </div>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h2 class="logo">
+                    <a href="#"><img src="../landing page/Landing Icons/Logo.svg" alt="Logo"></a>
+                </h2>
+                <p>TrackXpense helps you monitor expenses, manage income, and take control of your finances—all in one
+                    place.</p>
+                <div class="social-icons">
+                    <a href="#"><img src="../landing page/Landing Icons/instagram-fill.svg" alt="Instagram"></a>
+                    <a href="#"><img src="../landing page/Landing Icons/twitter-fill.svg" alt="Twitter"></a>
+                    <a href="#"><img src="../landing page/Landing Icons/youtube-fill.svg" alt="YouTube"></a>
+                </div>
+            </div>
 
-        <div class="newsletter">
-            <h3>NEWS LETTER</h3>
-            <p>Subscribe to our newsletter to get our latest update & news</p>
-            <div class="newsletter-box">
-                <input type="email" placeholder="Your email address" id="email-input">
-                <button id="subscribe-btn">→</button>
+            <div class="footer-links">
+                <h3>QUICK LINK</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../Index.html">Dashboard</a></li>
+                    <li><a href="#about-us">About</a></li>
+                    <li><a href="#download-contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="newsletter">
+                <h3>NEWS LETTER</h3>
+                <p>Subscribe to our newsletter to get our latest update & news</p>
+                <div class="newsletter-box">
+                    <input type="email" placeholder="Your email address" id="email-input">
+                    <button id="subscribe-btn">→</button>
+                </div>
             </div>
         </div>
-    </div>
-    <hr></hr>
-    <div class="footer-bottom">
-        <p>© Copyright 2025. ShecodeAfricaGrp4. All Right Reserved.</p>
-    </div>
+        <hr>
+        </hr>
+        <div class="footer-bottom">
+            <p>© Copyright 2025. ShecodeAfricaGrp4. All Right Reserved.</p>
+        </div>
 
-</footer>
+    </footer>
 </section>
 
   </body>
+  <script src="../landing page/script.js"></script>
 </html>

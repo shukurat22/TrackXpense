@@ -1,14 +1,16 @@
 // script.js
 
 // Hamburger menu
+//document.addEventListener("DOMContentLoaded", function () {
+
 const toggle = document.querySelector("#navToggle");
 const mobile_menu = document.querySelector('.mobile-menu');
 
+//if (toggle && mobile-menu) {
 navToggle.addEventListener('click', () => {
-    toggle.classList.toggle('change')
-    mobile_menu.classList.toggle('active')
+    toggle.classList.toggle('change');
+    mobile_menu.classList.toggle('active');
 });
-
 
 // Smooth Scroll Functionality for Navigation and Footer Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -95,3 +97,15 @@ document.querySelectorAll('.about-list li').forEach(item => {
         alert(`You clicked on: ${text}`);
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+

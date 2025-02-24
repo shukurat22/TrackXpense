@@ -7,7 +7,7 @@ body{
   font-family: Arial;
 }
 
-#main-section{
+#main-section {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -15,40 +15,184 @@ body{
   border: 20px solid #1E3387;
   padding: 0px;
 }
-/* logo */
-.first-logo{
-  width:100%;
-  height: 75px;
-  margin-left: 32px;
 
-/*styling the nav bar */
+/* Desktop Menu Display */
+.desktop-display {
+  display: none;
 }
-.links{
+
+@media screen and (min-width: 1024px) {
+  .desktop-display{
+    display: flex;
+  }
+ 
+  .desktop-display li a {
+    color: #1E3387;
+    margin-left: 30px;
+    margin-right: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+    gap: 0;
+  }
+  .desktop-display li a:hover{
+    color: #788BE3;
+    font-weight: bold;
+  }
+ 
+} 
+
+
+/* Mobile Menu Display */
+
+.mobile-display {
+  width: 100%;
+}
+
+.nav-header {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.nav-header .logo img {
+  height: 75px;
+}
+
+.nav-header #navToggle {
+  display: none;
+  cursor: pointer;
+}
+
+#navToggle .bar {
+  width: 30px;
+  height: 3px;
+  margin: 4px;
+  border-radius: 5px;
+  background: #1E3A8A;
+  transition: .4s;
+}
+
+
+.change .bar {
+  display: block;
+  background: var(--purple-color);
+}
+
+.change .b-one {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.change .b-two {
+  opacity: 0;
+}
+
+.change .b-three {
+  transform: translateY(-8.75px) rotate(-45deg);
+
+}
+
+/* mobile menu */
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  padding-top: 5.5rem;
+  z-index: 1;
+  font-size: 16px;
+  transform: translate(-100%);
+  transition: .5s;
+  padding-left: 32px;
+  background: #1E3387;
+  left: -1px;
+}
+
+@media (min-width: 1024px) {
+  .mobile-menu {
+      display: flex !important; /* Ensure visibility on larger screens */
+  }
+
+  #navToggle {
+      display: none; /* Hide the hamburger menu on desktop */
+  }
+
+  .mobile-menu.active {
+    display: block;
+  }
+}
+
+.active {
+  transform: translate(0);
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+/* logo */
+.first-logo {
+  width: 100%;
+  height: 75px;
+  margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .first-logo {
+    margin-left: 32px;
+  }
+}
+
+.links {
   list-style: none;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-left: 160px;
-  margin-right: 24px;
-  padding: 24px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
+
 /* styling the icon section */
-#icon-holder{
- color:#1E3387;
- justify-content: space-between;
- display: flex;
- align-items: center;
- padding-left: 24px;
- padding-right: 32px;
- margin-left: 40%;
- margin-right: 32px;
- gap: 32px;
+#icon-holder {
+  color: #1E3387;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 32px;
+  margin-left: 40%;
+  margin-right: 32px;
+  gap: 32px;
 }
+
+@media screen and (min-width: 1024px) {
+  #icon-holder {
+    color: #ffffff;
+  }
+}
+
+
+
+
+
 
 body{
   font-family: Arial;
@@ -56,7 +200,7 @@ body{
 }
 
 .first-section{
-  background-color: lightgray;
+  background-color: #788BE3;
   color: #1E3387;
   font-weight: bold;
   display: flex;
@@ -68,7 +212,10 @@ body{
   width:100%;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
+}
 
+.first-section p{
+color: #1E3387;
 }
 .less{
   color: #1E3387;
@@ -242,12 +389,24 @@ border: none;
 color: white;
 }
 
+.done:hover {
+  background-color: #788BE3;
+  color: #1E3387;
+  cursor: pointer;
+}
+
 .more {
   border-radius: 8px;
   border: 1px solid #1E3387;
   color: black;
   background-color: white;
 }
+.more:hover {
+  background-color: #788BE3;
+  color: #1E3387;
+  cursor: pointer;
+}
+
 
 
 
@@ -394,3 +553,32 @@ hr {
   
 
 
+/* Popup Modal Styling */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}

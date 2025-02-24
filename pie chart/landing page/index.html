@@ -6,33 +6,43 @@
     <meta name="viewport" content="width=device-width, intial-scale =1.0" />
     <title>navbar project</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="Image/LOGO.png">
     <script src="https://kit.fontawesome.com/47f5f23b8c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header id="main-section">
-        <!-------logo ----------->
-        <!-- <div class="first-logo">
-            <img src="Image/LOGO.png" style="height: 75px" />
-        </div> -->
-
-        <div class="mobile-display">
+    
+    <header id="main-section"> 
+        <!----logo -------->
+       <div class="mobile-display">
             <div class="nav-header">
                 <div class="logo">
                     <img src="Image/LOGO.png" />
+                </div>
+                <div class="desktop-display">
+                    <div>
+                        <nav>
+                          <ul class="links">
+                            <li><a href="#index.html">Home</a></li>
+                            <li><a href="../Dashboard/Index.html">Dashboard</a></li>
+                            <li><a href="#download-contact">About</a></li>
+                            <li><a href="#contact-info">Contact</a></li>
+                          </ul>
+                        </nav>
+                      </div>
                 </div>
                 <div id="navToggle">
                     <div class="bar b-one"></div>
                     <div class="bar b-two"></div>
                     <div class="bar b-three"></div>
                 </div>
-            </div>
+            </div> 
             <div class="mobile-menu">
                 <ul class="nav-items">
-                    <li class="nav-list"><a class="nav-link" href="landing page/index.html">Home</a></li>
-                    <li class="nav-list"><a class="nav-link" href="Index.html">Dashboard</a></li>
-                    <li class="nav-list"><a class="nav-link" href="landing page/index.html">About</a></li>
-                    <li class="nav-list"><a class="nav-link" href="landing page/index.html">Contact</a></li>
+                    <li class="nav-list"><a class="nav-link" href="#index.html">Home</a></li>
+                    <li class="nav-list"><a class="nav-link" href="../Dashboard/Index.html">Dashboard</a></li>
+                    <li class="nav-list"><a class="nav-link" href="#download-contact">About</a></li>
+                    <li class="nav-list"><a class="nav-link" href="#contact-info">Contact</a></li>
                     <li class="nav-list"><a href="#" class="nav-link">
                             <i class="fa-solid fa-user"></i>
                         </a></li>
@@ -44,24 +54,34 @@
             </div>
         </div>
 
-        <div class="desktop-display">
-
-        </div>
+        
     </header>
 
     <!----------Hero Section-->
     <section id="Hero">
         <div class="hero-grid">
-            <div class="Hero-Container">
+            <div class="hero-container">
+                <div class="hero-container-content">
+                    <div class="text-container">
+                        <h1> CONTROL YOUR FINANCES WITH TrackXpense </h1>
+                        
+                        <div class="button-collection">
+                            <p> Get Started below </p>
+                            <a href="../Dashboard/Index.html"><button> Track Now </button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="Hero-Container">
                 <h1>CONTROL YOUR FINANCES WITH TrackXpense</h1>
                 <p class="copy-2"> ... Master your money, own your future! </p>
                 <div class="get-2">
                     <p class="get">Get Started below</p>
                 </div>
                 <button class="but"> TRACK NOW </button>
-            </div>
-            <div>
-                <img class="hero-image" src="Image/Free Ui View Mobile App Mockup 1.png" />
+            </div> -->
+            <div class="hero-image">
+                <!-- <img class="hero-image" src="Image/Free Ui View Mobile App Mockup 1.png" /> -->
             </div>
         </div>
     </section>
@@ -125,29 +145,30 @@
             <!-- Left Section -->
             <div class="content">
                 <h2>DOWNLOAD APP NOW</h2>
-                <p class="subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit
-                    vitae...</p>
+                <p class="subheading">TrackXpense is a financial technology solution that 
+                     helps you to keep track of your income and expenses, helping you be in control in your journey to obtain financial freedom.
+                    </p>
 
                 <!-- App Store Buttons -->
                 <div class="store-buttons">
-                    <img src="toppng 2.png" alt="Google Play">
-                    <img src="topping 3.png" alt="App Store">
+                    <img src="../landing page/Landing Icons/toppng 2.png" alt="Google Play">
+                    <img src="../landing page/Landing Icons/topping 3.png" alt="App Store">
                 </div>
 
                 <!-- Statistics Boxes -->
                 <div class="stats">
                     <div class="stat-box">
-                        <img src="download-2-fill icon.svg" alt="Download Icon">
+                        <img src="../landing page/Landing Icons/download-2-fill icon.svg" alt="Download Icon">
                         <h3>59865</h3>
                         <p>DOWNLOAD</p>
                     </div>
                     <div class="stat-box">
-                        <img src="thumb-up-fill icon.svg" alt="Like Icon">
+                        <img src="../landing page/Landing Icons/thumb-up-fill icon.svg" alt="Like Icon">
                         <h3>29852</h3>
                         <p>LIKE</p>
                     </div>
                     <div class="stat-box">
-                        <img src="star-fill icon.svg" alt="Star Icon">
+                        <img src="../landing page/Landing Icons/star-fill icon.svg" alt="Star Icon">
                         <h3>1500</h3>
                         <p>5 STAR RATING</p>
                     </div>
@@ -156,7 +177,7 @@
 
             <!-- Right Section (Image) -->
             <div class="phones">
-                <img src="Gravity-Scene-iPhone-12-Mockup 1.png" alt="Phone Mockup" class="phone">
+                <img src="../landing page/Image/Gravity-Scene-iPhone-12-Mockup 1.png" alt="Phone Mockup" class="phone">
             </div>
         </div>
     </section>
@@ -171,15 +192,15 @@
     <!-------------------------------------Footer Section------------------------------------------------------->
 
     <!-- Contact Section -->
-    <section class="contact-info">
+    <section class="contact-info" id="contact-info">
         <div class="contact-card">
             <div class="contact-item">
-                <img src="Email Icon.svg" alt="Email Icon">
+                <img src="../landing page/Landing Icons/Email Icon.svg" alt="Email Icon">
                 <span>info@trackxpense.com</span>
             </div>
             <div class="divider"></div>
             <div class="contact-item">
-                <img src="Call.svg" alt="Phone Icon">
+                <img src="../landing page/Landing Icons/Call.svg" alt="Phone Icon">
                 <span>+234 321 655 9985</span>
             </div>
         </div>
@@ -190,14 +211,14 @@
         <div class="footer-container">
             <div class="footer-left">
                 <h2 class="logo">
-                    <a href="#"><img src="Logo.svg" alt="Logo"></a>
+                    <a href="#"><img src="../landing page/Landing Icons/Logo.svg" alt="Logo"></a>
                 </h2>
                 <p>TrackXpense helps you monitor expenses, manage income, and take control of your finances—all in one
                     place.</p>
                 <div class="social-icons">
-                    <a href="#"><img src="instagram-fill.svg" alt="Instagram"></a>
-                    <a href="#"><img src="twitter-fill.svg" alt="Twitter"></a>
-                    <a href="#"><img src="youtube-fill.svg" alt="YouTube"></a>
+                    <a href="#"><img src="../landing page/Landing Icons/instagram-fill.svg" alt="Instagram"></a>
+                    <a href="#"><img src="../landing page/Landing Icons/twitter-fill.svg" alt="Twitter"></a>
+                    <a href="#"><img src="../landing page/Landing Icons/youtube-fill.svg" alt="YouTube"></a>
                 </div>
             </div>
 
@@ -228,13 +249,6 @@
 
     </footer>
     </section>
-
-
-
-
-
-
-
 
 
 
