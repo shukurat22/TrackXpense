@@ -80,7 +80,7 @@
         <button class="carrier">
         <i class="fa-brands fa-youtube"></i>
         <p>Youtube</p>
-         <select>
+         <select id="name">
         <option></option>
         </select>
         </button>
@@ -92,14 +92,14 @@
     <label for="name">Amount</label>
   </div>
   <div class="galala">
-    <input type="text" name="cost" placeholder="$48.00">
+    <input type="text" name="cost" id="amount" placeholder="$48.00">
     <button>clear</button>
   </div>
      
      <div class="second-section1">
        <p class="hi">Date</p>
       <button class="bot">
-        <input class="hit"type="text" name="date" placeholder="Tue, 22nd feb 2023">
+        <input class="hit"type="text" name="date" id="date" placeholder="Tue, 22nd feb 2023">
         <i class="fa-regular fa-calendar-days"></i>
         
      </button>
@@ -109,7 +109,7 @@
        <label for="text">Invoice (optional)</label>
       <button class="yh">
           <i class="fa-solid fa-circle-plus"></i>
-       <input class="p" type="text" name="mesa" placeholder="Add invoice">
+       <input class="p" type="text" name="mesa" id="message" placeholder="Add invoice">
      
       </button>
      </div>
@@ -117,7 +117,7 @@
     </div>
 
     <div class="done-add">
-      <button class="done">Done</button>
+      <button class="done" id="doneBtn">Done</button>
       <button class="more">Add More</button>
     </div>
     
@@ -187,7 +187,7 @@
                   <li><a href="/index.html">Home</a></li>
                   <li><a href="/pie chart/Dashboard/Index.html">Dashboard</a></li>
                   <li><a href="/index.html#download-contact">About</a></li>
-                  <li><a href="/landing page/index.html#contact-info">Contact</a></li>
+                  <li><a href="#contact-info">Contact</a></li>
               </ul>
           </div>
 
@@ -208,6 +208,24 @@
 
   </footer>
 </section>
+
+
+<script>
+  document.getElementById("doneBtn").addEventListener("click", function() {
+    let name = document.querySelector(".carrier p").textContent.trim(); 
+    let amount = document.getElementById("amount").value.trim();
+    let date = document.getElementById("date").value.trim();
+    
+    // Check if any required field is empty
+    if (name === "Youtube" && amount !== "" && date !== "") {
+        alert("✅ Success! Your expense has been recorded.");
+    } else {
+        alert("❌ Error: Please fill in all required fields.");
+    }
+});
+
+</script>
+
 <script src="/landing page/script.js"></script>
 <script src="script.js"></script>
   </body>
