@@ -7,6 +7,10 @@ body{
   font-family: Arial;
 }
 
+.body{
+padding-top: 126px;
+}
+
 #main-section {
   display: flex;
   flex-direction: row;

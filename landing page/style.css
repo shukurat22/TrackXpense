@@ -15,6 +15,16 @@ body {
   justify-content: space-around;
   border: 20px solid #1E3387;
   padding: 0px;
+
+
+  /* stuffs i added */
+  position: fixed;
+  top: 0;
+  width: 100%; /* Ensure it stretches across the screen */
+  background: #fff;
+  padding: 0px;
+  z-index: 1000;
+
 }
 
 /* Desktop Menu Display */
@@ -214,6 +224,10 @@ background-color: #fff;
 
 } */
 
+/* i added */
+#Hero {
+  padding-top: 120px;
+}
 
 
 .Hero-Container h1 {

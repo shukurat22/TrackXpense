@@ -208,6 +208,9 @@ body{
   gap: 48px;
   align-items: center;
 
+  /* I added */
+  padding-top: 120px;
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -450,8 +453,8 @@ button:hover{
 .third-p{
   position: absolute;
   bottom:0px;
-  top: 40%;
-  left:30%;
+  top: 44%;
+  left: 40%;
   color: white;
 }
 
