@@ -218,6 +218,17 @@ body{
   border-bottom-left-radius: 15px;
 }
 
+.add{
+  display: flex;
+  gap: 10px;
+  color: #1E3387;
+  padding-left: 1300px;
+}
+
+.add p {
+  color: #1E3387;
+  font-size: medium;
+}
 .first-section p{
 color: #1E3387;
 }
